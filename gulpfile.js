@@ -62,7 +62,7 @@ gulp.task('clean',function(){
 
 // Watch files for changes
 gulp.task('watch', function(){
-  gulp.watch('./src/less/*.less', ['lint','less','uglify']);
+  gulp.watch('./src/less/*', ['lint','less','uglify']);
 });
 
 // Default Task

@@ -4,33 +4,6 @@
   AUTHOR: Al Zuniga
   SITE: http://www.alzuniga.com
 */
-.gutter {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-}
-.clear-fix {
-  display: table;
-  clear: both;
-  content: '';
-}
-.horizontal-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-}
-.vertical-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: start;
-      align-items: flex-start;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-}
 html {
   font-size: 100%;
   line-height: 1.5rem;
