@@ -49,7 +49,7 @@ gulp.task('uglify',function(){
       "uglyComments": true
     }))
     .on('error', logError)
-    .pipe(rename('flowrid.min.css'))
+    .pipe(rename('flowgrid.min.css'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(notify({message:'Uglify task complete'}));
 });
