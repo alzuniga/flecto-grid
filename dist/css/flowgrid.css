@@ -41,6 +41,7 @@ h6 {
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
+div,
 p {
   font-size: 1rem;
   line-height: 1.5rem;
@@ -50,14 +51,16 @@ p {
 *:after {
   box-sizing: border-box;
 }
-*:before,
-*:after {
+html {
+  box-sizing: inherit;
+}
+div[class="col-"],
+.grid-row,
+.grid-wrapper,
+.nav-wrapper {
   display: table;
   clear: both;
   content: '';
-}
-html {
-  box-sizing: inherit;
 }
 @media (max-width: 767px) {
   .col-sm-1 {
