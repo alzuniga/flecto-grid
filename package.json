@@ -1,0 +1,38 @@
+{
+  "name": "flowgrid",
+  "version": "0.1.0",
+  "description": "A simple flexbox based grid which flows not only in direction but vertical rhythm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alzuniga/flowgrid.git"
+  },
+  "keywords": [
+    "css",
+    "flexbox",
+    "less",
+    "grid",
+    "responsive"
+  ],
+  "author": "Al Zuniga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alzuniga/flowgrid/issues"
+  },
+  "homepage": "https://github.com/alzuniga/flowgrid#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-less": "^3.3.0",
+    "gulp-lesshint": "^3.0.0",
+    "gulp-notify": "^3.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglifycss": "^1.0.8",
+    "less-plugin-autoprefix": "^1.5.1",
+    "lesshint": "^3.1.1"
+  }
+}

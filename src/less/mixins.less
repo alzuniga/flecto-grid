@@ -1,0 +1,28 @@
+.gutter{
+  margin-left: @half-gutter-width;
+  margin-right: @half-gutter-width;
+}
+
+.clear-fix{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.column-width(@desktopCols, @numberOfColumns){
+  width: calc(100% / (@desktopCols / @numberOfColumns) - @gutter-width);
+  .gutter();
+}
+
+.horizontal-grid{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+}
+
+.vertical-grid{
+  display: flex;
+  align-items: flex-start;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
