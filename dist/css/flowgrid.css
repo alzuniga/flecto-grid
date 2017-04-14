@@ -14,8 +14,8 @@ h3,
 h4,
 h5,
 h6 {
+  margin: 0rem 0rem 1.5rem;
   text-transform: uppercase;
-  margin: 0 0 1.5rem;
 }
 h1 {
   font-size: 2.625rem;
@@ -47,20 +47,20 @@ p {
   line-height: 1.5rem;
 }
 *,
-*:before,
-*:after {
+*:after,
+*:before {
   box-sizing: border-box;
 }
 html {
   box-sizing: inherit;
 }
-div[class="col-"],
 .grid-row,
 .grid-wrapper,
-.nav-wrapper {
-  display: table;
+.nav-wrapper,
+[class^='col-'] {
   clear: both;
   content: '';
+  display: table;
 }
 @media (max-width: 767px) {
   .col-sm-1 {
@@ -86,42 +86,42 @@ div[class="col-"],
 }
 @media (min-width: 768px) {
   .col-md-1 {
-    width: calc(100% / (8 / 1) - 1.5rem);
+    width: calc(100% / (6 / 1) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-2 {
-    width: calc(100% / (8 / 2) - 1.5rem);
+    width: calc(100% / (6 / 2) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-3 {
-    width: calc(100% / (8 / 3) - 1.5rem);
+    width: calc(100% / (6 / 3) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-4 {
-    width: calc(100% / (8 / 4) - 1.5rem);
+    width: calc(100% / (6 / 4) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-5 {
-    width: calc(100% / (8 / 5) - 1.5rem);
+    width: calc(100% / (6 / 5) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-6 {
-    width: calc(100% / (8 / 6) - 1.5rem);
+    width: calc(100% / (6 / 6) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-7 {
-    width: calc(100% / (8 / 7) - 1.5rem);
+    width: calc(100% / (6 / 7) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
   .col-md-8 {
-    width: calc(100% / (8 / 8) - 1.5rem);
+    width: calc(100% / (6 / 8) - 1.5rem);
     margin-left: 0.75rem;
     margin-right: 0.75rem;
   }
@@ -203,15 +203,54 @@ div[class="col-"],
       flex-flow: row wrap;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  margin: 0 auto;
+  margin: 0rem auto;
   max-width: 72rem;
 }
 .nav-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  -ms-flex-align: start;
+      align-items: flex-start;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-flow: column wrap;
+      flex-flow: column wrap;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  margin: 0 auto;
+  margin: 0rem auto;
 }
+/*
+                                            50                                                  100
+                        33.333                              66.667                              100
+                  25                        50                        75                        100
+----------------------------------------------------------------------------------------------------
+        16.667          33.333              50              66.667          83.333              100
+8.333	16.667    25    33.333    41.667    50    58.333    66.667    75    83.333    91.667    100
+
+
+m-quarter
+m-third
+m-half
+m-2-third
+m-3-quarter
+m-whole
+
+
+t-sixth
+t-third
+t-half
+t-2-third
+t-5-sixth
+t-whole
+
+1-12
+2-12, sixth
+3-12, fourth
+4-12, third
+5-12
+6-12, half
+7-12
+8-12, two-thirds
+9-12, three-quarters
+10-12, five-sixths
+11-12
+FULL
+*/

@@ -1,28 +1,28 @@
-.gutter{
-  margin-left: @half-gutter-width;
-  margin-right: @half-gutter-width;
+.gutter {
+    margin-left: @half-gutter-width;
+    margin-right: @half-gutter-width;
 }
 
-.clear-fix{
-  display: table;
-  clear: both;
-  content: '';
+.clear-fix {
+    clear: both;
+    content: '';
+    display: table;
 }
 
-.column-width(@desktopCols, @numberOfColumns){
-  width: calc(100% / (@desktopCols / @numberOfColumns) - @gutter-width);
-  .gutter();
+.column-width(@totalGridColumns, @numberOfColumns) {
+    .gutter();
+    width: calc(100% / (@totalGridColumns / @numberOfColumns) - @gutter-width);
 }
 
-.horizontal-grid{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
+.horizontal-grid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
-.vertical-grid{
-  display: flex;
-  align-items: flex-start;
-  flex-flow: column wrap;
-  justify-content: flex-start;
+.vertical-grid {
+    align-items: flex-start;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
 }
