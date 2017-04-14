@@ -11,19 +11,14 @@ var lesshint        = require('gulp-lesshint');
 var notify          = require('gulp-notify');
 var rename          = require('gulp-rename');
 var uglify          = require('gulp-uglifycss');
-
-// Log Errors
-function logError(e){
-  console.error.bind(e);
-  this.emit('end');
-}
+var util            = require('gulp-util');
 
 // Lint Task
 gulp.task('lint',function(){
   return gulp.src('./src/less/*.less')
     .pipe(lesshint())
     .pipe(lesshint.reporter())
-    .on('error', logError)
+    .on('error', util.log)
     .pipe(lesshint.failOnError())
     .pipe(notify({message:'Linting task complete.'}));
 });
@@ -35,7 +30,7 @@ gulp.task('less',function(){
       strictMath: 'on',
       plugins: [autoprefix]
     }))
-    .on('error', logError)
+    .on('error', util.log)
     .pipe(rename('flowgrid.css'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(notify({message:'Less task complete.'}));
@@ -48,7 +43,7 @@ gulp.task('uglify',function(){
       "maxLineLen": 80,
       "uglyComments": true
     }))
-    .on('error', logError)
+    .on('error', util.log)
     .pipe(rename('flowgrid.min.css'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(notify({message:'Uglify task complete'}));

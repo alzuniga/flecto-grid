@@ -32,6 +32,7 @@
     "gulp-notify": "^3.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-uglifycss": "^1.0.8",
+    "gulp-util": "^3.0.8",
     "less-plugin-autoprefix": "^1.5.1",
     "lesshint": "^3.1.1"
   }
