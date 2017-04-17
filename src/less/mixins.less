@@ -11,6 +11,7 @@
 
 .column-width(@totalGridColumns, @numberOfColumns) {
     .gutter();
+    overflow: auto;
     width: calc(100% / (@totalGridColumns / @numberOfColumns) - @gutter-width);
 }
 
