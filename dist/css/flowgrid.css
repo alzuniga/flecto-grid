@@ -102,56 +102,68 @@ html {
   -ms-flex-pack: start;
       justify-content: flex-start;
 }
+.one-fourth,
+.one-third,
+.one-half,
+.two-thirds,
+.three-fourths,
+.full,
 .sm-1-4,
-.one-fourth {
+.sm-1-3,
+.sm-2-4,
+.sm-2-3,
+.sm-3-4,
+.sm-3-3,
+.sm-4-4,
+.md-1-6,
+.md-2-6,
+.md-3-6,
+.md-4-6,
+.md-5-6,
+.md-6-6,
+.lg-1-12,
+.lg-2-12,
+.lg-3-12,
+.lg-4-12,
+.lg-5-12,
+.lg-6-12,
+.lg-7-12,
+.lg-8-12,
+.lg-9-12,
+.lg-10-12,
+.lg-11-12,
+.lg-12-12 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
   overflow: auto;
+}
+.sm-1-4,
+.one-fourth {
   width: calc(100% / (4 / 1) - 1.5rem);
 }
 .sm-1-3,
 .one-third {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (3 / 1) - 1.5rem);
 }
 .sm-2-4,
 .one-half {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (4 / 2) - 1.5rem);
 }
 .sm-2-3,
 .two-thirds {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (3 / 2) - 1.5rem);
 }
 .sm-3-4,
 .three-fourths {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (4 / 3) - 1.5rem);
 }
 .sm-3-3 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (3 / 3) - 1.5rem);
 }
 .sm-4-4 {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
-  overflow: auto;
   width: calc(100% / (4 / 4) - 1.5rem);
 }
 .full {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
   width: 100%;
 }
 @media (min-width: 48rem) {
@@ -159,39 +171,21 @@ html {
     max-width: 45rem;
   }
   .md-1-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 1) - 1.5rem);
   }
   .md-2-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 2) - 1.5rem);
   }
   .md-3-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 3) - 1.5rem);
   }
   .md-4-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 4) - 1.5rem);
   }
   .md-5-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 5) - 1.5rem);
   }
   .md-6-6 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (6 / 6) - 1.5rem);
   }
 }
@@ -200,75 +194,39 @@ html {
     max-width: 72rem;
   }
   .lg-1-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 1) - 1.5rem);
   }
   .lg-2-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 2) - 1.5rem);
   }
   .lg-3-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 3) - 1.5rem);
   }
   .lg-4-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 4) - 1.5rem);
   }
   .lg-5-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 5) - 1.5rem);
   }
   .lg-6-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 6) - 1.5rem);
   }
   .lg-7-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 7) - 1.5rem);
   }
   .lg-8-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 8) - 1.5rem);
   }
   .lg-9-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 9) - 1.5rem);
   }
   .lg-10-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 10) - 1.5rem);
   }
   .lg-11-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 11) - 1.5rem);
   }
   .lg-12-12 {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
-    overflow: auto;
     width: calc(100% / (12 / 12) - 1.5rem);
   }
 }

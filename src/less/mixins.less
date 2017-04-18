@@ -1,7 +1,7 @@
-.gutter {
-    margin-left: @half-gutter-width;
-    margin-right: @half-gutter-width;
-}
+// .gutter {
+//     margin-left: @half-gutter-width;
+//     margin-right: @half-gutter-width;
+// }
 
 .clear-fix {
     clear: both;
@@ -10,9 +10,15 @@
 }
 
 .column-width(@totalGridColumns, @numberOfColumns) {
-    .gutter();
-    overflow: auto;
+    // .gutter();
+    // overflow: auto;
     width: calc(100% / (@totalGridColumns / @numberOfColumns) - @gutter-width);
+}
+
+.column-properties {
+  margin-left: @half-gutter-width;
+  margin-right: @half-gutter-width;
+  overflow: auto;
 }
 
 .horizontal-grid {
