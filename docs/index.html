@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexil</title>
+    <link rel="stylesheet" href="../dist/css/flexil.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Playfair Display", sans-serif;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .img-flow {
+            display: inline-block;
+            float: left;
+            margin: 1.5rem 1.5rem 1.5rem 0rem;
+            max-width: 41.666%;
+            width: 100%;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        [id^="row"] .bg-color {
+            background-color: #dfdfdf;
+            border: 1px dashed black;
+            padding-left: 0.75rem;
+            padding-right: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-wrapper">
+        <div class="grid-row">
+            <div class="full">
+                <h1 class="center-text">Flexil Example</h1>
+                <h3 class="center-text">A usage example of flexil grid system</h3>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="full md-3-6 lg-6-12">
+                <img class="img-flow" src="http://placehold.it/240x180" alt="Placehold.it placeholder image" />
+                <p>Vestibulum tristique nibh eget enim aliquet accumsan. Aliquam erat volutpat. Cras condimentum eleifend finibus. Sed tempor ligula est, a ultrices augue varius ac. Donec dignissim mollis massa eu ornare. Nulla facilisi. Donec tellus dolor,
+                    malesuada nec est vitae, placerat vulputate purus. Vestibulum gravida, arcu eget ultrices ullamcorper, risus eros placerat velit, ut aliquet ex diam et augue. Duis sollicitudin, tortor quis laoreet suscipit, dolor ligula lobortis felis,
+                    vitae hendrerit tortor elit id purus. Quisque lobortis nunc dolor, a convallis mi hendrerit blandit. Mauris vulputate, lectus ut tincidunt sollicitudin, risus dui facilisis nisl, sed interdum augue ipsum aliquam dui. Nullam rhoncus
+                    sollicitudin metus. Aenean id gravida arcu. Sed nec tincidunt dui.</p>
+            </div>
+            <div class="full md-3-6 lg-6-12">
+                <p>Sed molestie ipsum odio, vel fringilla nibh congue vel. Mauris congue faucibus sapien sed scelerisque. Donec volutpat sollicitudin risus sed feugiat. Aenean iaculis blandit augue, at finibus orci posuere vel. Nulla rutrum purus ut mauris
+                    hendrerit ultrices et non risus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut varius consectetur molestie. Vestibulum posuere facilisis erat, ac posuere sapien tempor nec. In suscipit placerat
+                    nunc vel tristique. Aliquam erat volutpat. Quisque ac nisi ante. Aliquam ultrices tortor id dapibus elementum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Class aptent taciti sociosqu ad
+                    litora torquent per conubia nostra, per inceptos himenaeos. Etiam placerat diam enim, eu facilisis erat facilisis in.</p>
+            </div>
+        </div>
+        <div class="grid-row">
+            <div class="full one-third">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ex ligula, condimentum sit amet interdum id, consectetur mollis dui. Pellentesque non dolor maximus, consectetur nibh eu, blandit neque.</p>
+            </div>
+            <div class="full one-third">
+                <p>Phasellus vulputate nulla id erat lacinia, ut maximus sapien viverra. In posuere egestas nisi, vel hendrerit ex vehicula ut. Donec ut tortor velit.</p>
+            </div>
+            <div class="full one-third">
+                <p>Etiam egestas at est at consequat. Pellentesque tristique enim sed feugiat aliquet. Aenean et ante dolor. Mauris porttitor ac massa non molestie. Mauris a volutpat leo, in pulvinar leo.</p>
+            </div>
+        </div>
+        <div id="row1" class="grid-row">
+            <div class="full bg-color">
+                <p>Full Width</p>
+            </div>
+        </div>
+        <div id="row2" class="grid-row">
+            <div class="three-fourths bg-color">
+                <p>Three Fourths</p>
+            </div>
+        </div>
+        <div id="row3" class="grid-row">
+            <div class="two-thirds bg-color">
+                <p>Two Thirds</p>
+            </div>
+        </div>
+        <div id="row4" class="grid-row">
+            <div class="one-half bg-color">
+                <p>One Half</p>
+            </div>
+        </div>
+        <div id="row5" class="grid-row">
+            <div class="one-third bg-color">
+                <p>One Third</p>
+            </div>
+        </div>
+        <div id="row6" class="grid-row">
+            <div class="one-fourth bg-color">
+                <p>One Fourth</p>
+            </div>
+        </div>
+        <div id="row7" class="grid-row">
+            <div class="one-fourth bg-color">
+                <p>One Fourth</p>
+            </div>
+            <div class="three-fourths bg-color">
+                <p>Three Fourths</p>
+            </div>
+        </div>
+        <div id="row8" class="grid-row">
+            <div class="one-third bg-color">
+                <p>One Third</p>
+            </div>
+            <div class="two-thirds bg-color">
+                <p>Two Thirds</p>
+            </div>
+        </div>
+        <div id="row9" class="grid-row">
+            <div class="one-half bg-color">
+                <p>One Half</p>
+            </div>
+            <div class="one-half bg-color">
+                <p>One Half</p>
+            </div>
+        </div>
+        <div id="row10" class="grid-row">
+            <div class="one-third bg-color">
+                <p>One Third</p>
+            </div>
+            <div class="one-third bg-color">
+                <p>One Third</p>
+            </div>
+            <div class="one-third bg-color">
+                <p>One Third</p>
+            </div>
+        </div>
+        <div id="row11" class="grid-row">
+            <div class="one-fourth bg-color">
+                <p>One Fourth</p>
+            </div>
+            <div class="one-fourth bg-color">
+                <p>One Fourth</p>
+            </div>
+            <div class="one-fourth bg-color">
+                <p>One Fourth</p>
+            </div>
+            <div class="one-fourth bg-color">
+                <p>One Fourth moving into the very next row</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

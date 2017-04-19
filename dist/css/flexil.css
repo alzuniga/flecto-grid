@@ -56,10 +56,8 @@ html {
 }
 .grid-row::before,
 .grid-wrapper::before,
-.nav-wrapper::before,
 .grid-row::after,
 .grid-wrapper::after,
-.nav-wrapper::after,
 [class^='col-']::after {
   clear: both;
   content: '';
@@ -82,25 +80,6 @@ html {
       justify-content: flex-start;
   margin: 1.5rem auto 0rem;
   max-width: auto;
-}
-.h-nav-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  margin: 0rem auto;
-}
-.v-nav-wrapper {
-  -ms-flex-align: start;
-      align-items: flex-start;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
 }
 .one-fourth,
 .one-third,
