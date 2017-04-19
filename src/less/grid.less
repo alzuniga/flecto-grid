@@ -10,10 +10,10 @@ html {
 
 .grid-row::before,
 .grid-wrapper::before,
-.nav-wrapper::before,
+// .nav-wrapper::before,
 .grid-row::after,
 .grid-wrapper::after,
-.nav-wrapper::after,
+// .nav-wrapper::after,
 [class^='col-']::after {
     .clear-fix();
 }
@@ -27,18 +27,18 @@ html {
 
 .grid-wrapper {
     .horizontal-grid();
-    margin: 0rem auto;
+    margin: 1.5rem auto 0rem;
     max-width: @xs-grid-width;
 }
 
-.h-nav-wrapper {
-  .horizontal-grid();
-  margin: 0rem auto;
-}
-
-.v-nav-wrapper {
-    .vertical-grid();
-}
+// .h-nav-wrapper {
+//   .horizontal-grid();
+//   margin: 0rem auto;
+// }
+//
+// .v-nav-wrapper {
+//     .vertical-grid();
+// }
 
 .one-fourth,
 .one-third,

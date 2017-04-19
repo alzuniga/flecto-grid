@@ -31,20 +31,20 @@ gulp.task('less',function(){
       plugins: [autoprefix]
     }))
     .on('error', util.log)
-    .pipe(rename('flowgrid.css'))
+    .pipe(rename('flexil.css'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(notify({message:'Less task complete.'}));
 });
 
 // Uglify Task
 gulp.task('uglify',function(){
-  return gulp.src('./dist/css/flowgrid.css')
+  return gulp.src('./dist/css/flexil.css')
     .pipe(uglify({
       "maxLineLen": 80,
       "uglyComments": true
     }))
     .on('error', util.log)
-    .pipe(rename('flowgrid.min.css'))
+    .pipe(rename('flexil.min.css'))
     .pipe(gulp.dest('./dist/css'))
     .pipe(notify({message:'Uglify task complete'}));
 });

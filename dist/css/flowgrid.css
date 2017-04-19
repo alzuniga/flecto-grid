@@ -1,6 +1,6 @@
 /*
-  PROJECT: Flowgrid
-  URL: https://github.com/alzuniga/flowgrid
+  PROJECT: Flexil-grid
+  URL: https://github.com/alzuniga/flexil-grid
   AUTHOR: Al Zuniga
   SITE: http://www.alzuniga.com
 */
@@ -80,7 +80,7 @@ html {
       flex-flow: row wrap;
   -ms-flex-pack: start;
       justify-content: flex-start;
-  margin: 0rem auto;
+  margin: 1.5rem auto 0rem;
   max-width: auto;
 }
 .h-nav-wrapper {
