@@ -1,5 +1,5 @@
 {
-  "name": "flowgrid",
+  "name": "flexil-grid",
   "version": "0.1.0",
   "description": "A simple flexbox based grid which flows not only in direction but vertical rhythm",
   "main": "index.js",
