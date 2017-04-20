@@ -76,24 +76,16 @@ html {
 
 // Default Columns (Mobile)
 
-.sm-1-4,
-.one-fourth {
-  .column-width(@fourthCols, 1);
+.full {
+  width: 100%;
 }
 
-.sm-1-3,
-.one-third {
-  .column-width(@thirdCols, 1);
+.sm-4-4 {
+  .column-width(@fourthCols, 4);
 }
 
-.sm-2-4,
-.one-half {
-  .column-width(@fourthCols, 2);
-}
-
-.sm-2-3,
-.two-thirds {
-  .column-width(@thirdCols, 2);
+.sm-3-3 {
+  .column-width(@thirdCols, 3);
 }
 
 .sm-3-4,
@@ -101,16 +93,24 @@ html {
   .column-width(@fourthCols, 3);
 }
 
-.sm-3-3 {
-  .column-width(@thirdCols, 3);
+.sm-2-3,
+.two-thirds {
+  .column-width(@thirdCols, 2);
 }
 
-.sm-4-4 {
-  .column-width(@fourthCols, 4);
+.sm-2-4,
+.one-half {
+  .column-width(@fourthCols, 2);
 }
 
-.full {
-  width: 100%;
+.sm-1-3,
+.one-third {
+  .column-width(@thirdCols, 1);
+}
+
+.sm-1-4,
+.one-fourth {
+  .column-width(@fourthCols, 1);
 }
 
 // Small Columns
@@ -120,30 +120,33 @@ html {
     max-width: @sm-grid-width;
   }
 
-  .md-1-6 {
-    .column-width(@sm-cols, 1);
-  }
-
-  .md-2-6 {
-    .column-width(@sm-cols, 2);
-  }
-
-  .md-3-6 {
-    .column-width(@sm-cols, 3);
-  }
-
-  .md-4-6 {
-    .column-width(@sm-cols, 4);
+  .md-6-6,
+  .full {
+    .column-width(@sm-cols, 6);
   }
 
   .md-5-6 {
     .column-width(@sm-cols, 5);
   }
 
-  .md-6-6 {
-    .column-width(@sm-cols, 6);
+  .md-4-6,
+  .two-thirds {
+    .column-width(@sm-cols, 4);
   }
 
+  .md-3-6,
+  .one-half {
+    .column-width(@sm-cols, 3);
+  }
+
+  .md-2-6,
+  .one-third {
+    .column-width(@sm-cols, 2);
+  }
+
+  .md-1-6 {
+    .column-width(@sm-cols, 1);
+  }
 }
 
 // large Columns
@@ -153,52 +156,57 @@ html {
     max-width: @lg-grid-width;
   }
 
-  .lg-1-12 {
-    .column-width(@lg-cols, 1);
-  }
-
-  .lg-2-12 {
-    .column-width(@lg-cols, 2);
-  }
-
-  .lg-3-12 {
-    .column-width(@lg-cols, 3);
-  }
-
-  .lg-4-12 {
-    .column-width(@lg-cols, 4);
-  }
-
-  .lg-5-12 {
-    .column-width(@lg-cols, 5);
-  }
-
-  .lg-6-12 {
-    .column-width(@lg-cols, 6);
-  }
-
-  .lg-7-12 {
-    .column-width(@lg-cols, 7);
-  }
-
-  .lg-8-12 {
-    .column-width(@lg-cols, 8);
-  }
-
-  .lg-9-12 {
-    .column-width(@lg-cols, 9);
-  }
-
-  .lg-10-12 {
-    .column-width(@lg-cols, 10);
+  .lg-12-12,
+  .full {
+    .column-width(@lg-cols, 12);
   }
 
   .lg-11-12 {
     .column-width(@lg-cols, 11);
   }
 
-  .lg-12-12 {
-    .column-width(@lg-cols, 12);
+  .lg-10-12 {
+    .column-width(@lg-cols, 10);
   }
 
+  .lg-9-12,
+  .three-fourths {
+    .column-width(@lg-cols, 9);
+  }
+
+  .lg-8-12,
+  .two-thirds {
+    .column-width(@lg-cols, 8);
+  }
+
+  .lg-7-12 {
+    .column-width(@lg-cols, 7);
+  }
+
+  .lg-6-12,
+  .one-half {
+    .column-width(@lg-cols, 6);
+  }
+
+  .lg-5-12 {
+    .column-width(@lg-cols, 5);
+  }
+
+  .lg-4-12,
+  .one-third {
+    .column-width(@lg-cols, 4);
+  }
+
+  .lg-3-12,
+  .one-fourth {
+    .column-width(@lg-cols, 3);
+  }
+
+  .lg-2-12 {
+    .column-width(@lg-cols, 2);
+  }
+
+  .lg-1-12 {
+    .column-width(@lg-cols, 1);
+  }
 }
