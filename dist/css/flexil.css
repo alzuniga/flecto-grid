@@ -126,6 +126,7 @@ html {
   margin-right: 0.75rem;
   position: relative;
   white-space: normal;
+  word-wrap: break-word;
 }
 .sm-full {
   width: 100%;
