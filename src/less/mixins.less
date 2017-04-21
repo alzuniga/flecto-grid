@@ -1,8 +1,3 @@
-// .gutter {
-//     margin-left: @half-gutter-width;
-//     margin-right: @half-gutter-width;
-// }
-
 .clear-fix {
     clear: both;
     content: '';
@@ -10,17 +5,14 @@
 }
 
 .column-width(@totalGridColumns, @numberOfColumns) {
-    // .gutter();
-    // overflow: auto;
     width: calc(100% / (@totalGridColumns / @numberOfColumns) - @gutter-width);
 }
 
 .column-properties {
   margin-left: @half-gutter-width;
   margin-right: @half-gutter-width;
-  position: relative;
   white-space: normal;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 
 .horizontal-grid {
@@ -28,10 +20,3 @@
     flex-flow: row wrap;
     justify-content: flex-start;
 }
-
-// .vertical-grid {
-//     align-items: flex-start;
-//     display: inline-flex;
-//     flex-flow: column wrap;
-//     justify-content: flex-start;
-// }
