@@ -124,7 +124,8 @@ html {
 .lg-12-12 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  overflow: auto;
+  position: relative;
+  white-space: normal;
 }
 .sm-full {
   width: 100%;
