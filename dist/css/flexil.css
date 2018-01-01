@@ -124,9 +124,8 @@ html {
 .lg-12-12 {
   margin-left: 0.75rem;
   margin-right: 0.75rem;
-  position: relative;
   white-space: normal;
-  word-wrap: break-word;
+  word-break: break-all;
 }
 .sm-full {
   width: 100%;
